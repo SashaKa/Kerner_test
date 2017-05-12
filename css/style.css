@@ -13,10 +13,18 @@ body {
     
 }
 .page-wrapper {
-    padding: 0 215px;
+    padding: 0 125px;
+}
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 .main-navigation {
     list-style: none;
+    padding-right: 30px;
+}
+.main-navigation-list {
+    display: flex;
 }
 .nav-link, .user-button {
     text-decoration: none;
@@ -25,15 +33,50 @@ body {
     font-weight: 400;
     line-height: 36px;
 }
+.user-button {
+    padding-left: 15px;
+}
+.sign-in-button{
+    position: relative;
+}
+.user-button-logo {
+    position: absolute;
+    top: 18px;
+    right: 279px;
+
+}
 .nav-link:hover, 
 .user-button:hover, 
 .catalog-btn:hover {
     color:  #579ac5;
 }
+.logo-search-wrapper,
+.logo-wrap,
+.phone-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+} 
+.logo-search-wrapper {
+        margin-top: 1%;
+        margin-bottom: 2%;
+
+}
+.logo-wrap {
+    flex-basis: 39%;
+}
+.phone-wrap {
+        flex-basis: 33%;
+}
 .logo-discription {
+    flex: 0 0 48%;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+}
+.search-form {
+    position: relative;
 }
 #search-input {
     line-height: 18px;
@@ -42,7 +85,7 @@ body {
     background-color:transparent;
     color: #fff;
     border: 1px solid #fff;
-    padding: 11px 45px 11px 34px;
+    padding: 11px 37px 11px 30px;
     border-radius: 50px;
     position: relative;
     -webkit-transition: all ease 0.8s;
@@ -61,8 +104,8 @@ label[for="search-input"] {
     width: 14px;
     height: 14px;
     background-image: url(../Kerner_img/search.svg);
-    left: 236px;
-    bottom: 20px;
+    left: 9px;
+    bottom: 15px;
 }
 .phone-number {
     cursor: pointer;
@@ -89,6 +132,12 @@ label[for="search-input"] {
     color: #000;
     background-color: #fff;
 }
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 h1 {
     font-size: 40px;
     font-weight: 400;
@@ -118,11 +167,28 @@ h1 {
     top: 14px;
     position: absolute;
 }
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31%;
+}
+.offer-wrap {
+    position: relative;
+    flex-basis: 22%;
+}
+.logo-offer {
+    position: absolute;
+    left: -60px;
+    top: 3px;
+
+}
 .offer-header {
     font-size: 20px;
     font-weight: 700;
-    line-height: 24px
+    line-height: 24px;
+    margin: 0;
 }
 .offer-description {
     font-weight: 400px;
+    margin-top: 15px;
 }
