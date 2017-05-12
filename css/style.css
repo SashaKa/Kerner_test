@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body {
     background-color: rgb(0, 0, 0);
@@ -16,14 +17,20 @@ body {
     padding: 0 125px;
 }
 .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .main-navigation {
     list-style: none;
     padding-right: 30px;
 }
 .main-navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .nav-link, .user-button {
@@ -53,24 +60,32 @@ body {
 .logo-search-wrapper,
 .logo-wrap,
 .phone-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 } 
 .logo-search-wrapper {
-        margin-top: 1%;
-        margin-bottom: 2%;
-
+        margin-top: 6%;
 }
 .logo-wrap {
-    flex-basis: 39%;
+    -ms-flex-preferred-size: 39%;
+        flex-basis: 39%;
 }
 .phone-wrap {
-        flex-basis: 33%;
+        -ms-flex-preferred-size: 33%;
+            flex-basis: 33%;
 }
 .logo-discription {
-    flex: 0 0 48%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -89,7 +104,6 @@ body {
     border-radius: 50px;
     position: relative;
     -webkit-transition: all ease 0.8s;
-    -moz-transition: all ease 0.8s;
     transition: all ease 0.8s;
 }
 #search-input:hover {
@@ -125,23 +139,22 @@ label[for="search-input"] {
     border: none;
     color: #fff;
     -webkit-transition: all ease 0.8s;
-    -moz-transition: all ease 0.8s;
     transition: all ease 0.8s;
 }
 .back-call:hover {
     color: #000;
     background-color: #fff;
 }
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 h1 {
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
+    width: 64%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 163px;
+    margin-bottom: 50px;
 }
 .catalog-btn {
     position: relative;
@@ -153,7 +166,6 @@ h1 {
     line-height: 18px;
     padding: 12px 15px 12px 45px;
     -webkit-transition: all ease 0.8s;
-    -moz-transition: all ease 0.8s;
     transition: all ease 0.8s;
 }
 .catalog-btn:hover {
@@ -168,17 +180,23 @@ h1 {
     position: absolute;
 }
 .page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 31%;
 }
 .offer-wrap {
     position: relative;
-    flex-basis: 22%;
+    -ms-flex-preferred-size: 27%;
+        flex-basis: 27%;
+    padding-left: 55px;
 }
 .logo-offer {
     position: absolute;
-    left: -60px;
+    left: -3px;
     top: 3px;
 
 }
